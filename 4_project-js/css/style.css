@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'mm';
+    src: url("../fonts/pyidaungsu-2.5.3_Regular.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "mm";
+}
+.container{
+    display: flex;
+    height: 100vh;
+    /*flex-direction: column;*/
+    /*flex-wrap: nowrap;*/
+}
+
+.add{
+    /*background-color: antiquewhite;*/
+    height: 100vh;
+    width: 30%;
+    padding: 50px;
+}
+
+.add-header{
+    text-transform: uppercase;
+}
+
+.add form{
+    border-top: 2px solid black;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.form-input{
+    margin-bottom: 20px;
+}
+.form-input label{
+    display: block;
+}
+.form-input input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    border: 2px solid black;
+
+}
+
+.form-input input:focus{
+    outline: none;
+    border: 2px solid #00ff00;
+}
+
+.form-input textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    border: 2px solid black;
+
+}
+.form-input textarea:focus{
+    outline: none;
+    border: 2px solid #00ff00;
+}
+
+.form-input button{
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+}
+.form-input button:focus{
+    outline: none;
+    /*border: 2px solid #00ff00;*/
+}
+.form-input button:active{
+    outline: none;
+    background-color: #000000;
+    color: #fff;
+}
+.form-input span{
+    color: #ff5346;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.show{
+    background-color: #f7f7f7;
+    height: 100vh;
+    width: 70%;
+    box-shadow: inset 2px 0 5px rgba(0,0,0,0.2);
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.article{
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.article-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.date {
+    color: #707070;
+    margin-right: 15px;
+}
+.article-des{
+    color: #414141;
+}
+.article-foot{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    color: deeppink;
+    margin-right: 15px;
+}
+.like:active{
+
+}
+
+
+.owner{
+    color: #0e7031;
+    margin-right: 15px;
+
+}
+
+
+
+

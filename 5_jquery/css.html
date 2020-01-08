@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one{
+            color: white;
+            font-size: 30px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="two" data-id="123">Min Ga Lar Par</h1>
+
+<script src="js/jquery.js"></script>
+<script>
+    $("h1").addClass('one');
+    $("h1").removeClass('two');
+
+    $("h1").attr("title","testing jquery attribute");
+    $("h1").removeAttr("data-id");
+
+    $("h1").after(`<ul class="bb"></ul>`);
+    $(".bb").append(`<li>One</li>`).append(`<li>Two</li>`).append(`<li>Three</li>`);
+    $(".bb").prepend(`<li>to the top</li>`);
+
+
+
+
+</script>
+
+</body>
+</html>

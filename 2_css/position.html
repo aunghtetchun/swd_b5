@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 4000px;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .one{
+            width: 200px;
+            height: 100px;
+            background: black;
+            position: fixed;
+            bottom:0px;
+            right: 100px;
+            z-index: 3;
+        }
+        .two{
+            width: 200px;
+            height: 150px;
+            background: red;
+            /*margin: 20px;*/
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+        .sticky{
+            background: green;
+            color: white;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+</div>
+<p class="sticky">I'm sticky</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum dicta earum illum, libero quaerat quo tempore velit veniam voluptas! Commodi consequuntur eaque explicabo in molestiae quae quibusdam voluptatum. Laboriosam?
+</p>
+
+
+</body>
+</html>

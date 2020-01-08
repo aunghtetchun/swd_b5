@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<h1>Min Ga Lar par</h1>
+<a href="http://www.google.com">google</a>
+<p style="color: blue;">CSS San Kyi Tar</p>
+
+
+<script src="js/jquery.js"></script>
+<script>
+
+
+
+
+
+
+    //get data
+    let jsX = document.getElementsByName("h1").innerHTML;
+    let x = $("h1").html(); //get
+    let attr = $("a").attr("href");
+    let css = $("p").css("color");
+    console.log(css);
+
+    //set data
+    $("h1").html("Hein Htet Zan");
+    $("a").attr("href","http://www.facebook.com");
+    $("p").css("color","red");
+    $("p").css({fontSize : "25px",textTransform:"uppercase"});
+
+
+</script>
+</body>
+</html>

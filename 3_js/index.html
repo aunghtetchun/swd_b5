@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .input{
+            border: 1px solid black;
+        }
+        .input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="input" class="input">
+<ol id="output">
+
+</ol>
+<script>
+
+    let store = [];
+    let banText = ["kyawgyi","koko"];
+
+    function inputFilter(x){
+        if(!x){
+            document.getElementById('input').style.border = "1px solid red";
+            return false;
+        }else{
+            if(banText.includes(x)){
+                if(!confirm(`${x} ယခုစကားလုံးကို အသုံးပြုခွင့်မရှိပါ \n ဆက်လက်အသုံးပြုလိုလျှင် 'Ok' နှိပ်ပါ \n မဟုတ်လျှင် 'cancel'`)){
+                    window.close();
+                }
+                return false;
+            }else {
+                document.getElementById('input').style.border ="1px solid black";
+                return x;
+            }
+
+        }
+    }
+
+    function addToStore(x){
+        store.push(x);
+    }
+
+    function showList(){
+        let output = document.getElementById('output');
+        output.innerHTML = "";
+        for(x in store){
+            console.log(store[x]);
+            output.innerHTML += `<li>${store[x]}</li>`;
+        }
+        document.getElementById('input').value = "";
+    }
+
+    document.getElementById('input').onkeyup = function (e) {
+        if(e.keyCode == 13){
+            let input = inputFilter(this.value);
+
+            if(input){
+                addToStore(input);
+                console.log(store);
+                showList();
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

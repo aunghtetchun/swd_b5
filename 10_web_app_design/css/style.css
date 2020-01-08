@@ -1,0 +1,50 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.aside-left {
+
+}
+.aside-left ul{
+    padding: 0;
+    margin:0;
+}
+.brand-icon{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 5px 0;
+}
+.aside-left ul li{
+    margin: 10px 0;
+}
+.menu-item{
+    text-transform: uppercase;
+    background-color: #f8f9fa;
+    width: 100%;
+    /*display: inline-block;*/
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item:hover{
+    background-color: #02a9f450;
+    text-decoration: none !important;
+    color: #02a9f4;
+}
+.menu-item.active{
+    background-color: #02a9f4;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+}
+.bg-danger-soft{
+     background-color: #f5c6cb !important;
+}

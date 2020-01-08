@@ -1,0 +1,128 @@
+*{
+
+}
+
+html{
+    /*height: 4000px;*/
+}
+
+.bg-custome{
+    background-color: #e7f5fb;
+}
+
+.logo{
+    /*width: 70px;*/
+}
+
+.home-slide{
+    height: 600px;
+    overflow: hidden;
+}
+
+.home-slide-list{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-next .fa,.carousel-control-prev .fa{
+    width: 50px;
+    height: 50px;
+    background-color: #02a9f4;
+    line-height: 50px;
+    border-radius: 0.25rem;
+}
+
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-height{
+    height: 300px;
+}
+.banner-name{
+
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 4em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.slogan{
+    background-image: url("../image/banner/about-banner.jpg");
+    background-size: cover;
+}
+.slogan-div{
+    min-height: 300px;
+}
+.slogan-text{
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 2em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.profile{
+    transition: 0.5s;
+}
+.profile:hover{
+    box-shadow: 0 5px 10px #00000030;
+    transform: translateY(-10px);
+}
+.profile figure{
+    width: 300px;
+    height: 300px;
+}
+.profile figure img{
+    transition: 1s;
+}
+.profile:hover figure img{
+    transform: scale(1.2);
+    filter: contrast(140%);
+}
+.social-icon a{
+    display: inline-block;
+    width: 50px;
+}
+.slick-arrow{
+    background: #03a9f4 !important;
+    border-radius: 0.25rem;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 540px){
+    .banner-name{
+        font-size: 3em;
+    }
+}

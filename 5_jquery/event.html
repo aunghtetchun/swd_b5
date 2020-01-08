@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Event</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        body{
+            height: 4000px;
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+<input type="text" class="ipt">
+
+<select name="" id="sel">
+    <option value="default" disabled selected>Select a number</option>
+    <option value="one">one</option>
+    <option value="two">two</option>
+    <option value="three">three</option>
+
+</select>
+<script src="js/jquery.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        //mouse event
+        $(".container").click(function () {
+            console.log("U Click");
+        });
+        $(".container").dblclick(function () {
+            console.log("U Click double");
+        });
+        $(".container").mouseenter(function () {
+            console.log("this is mouse enter event");
+        });
+
+        $(".container").mouseleave(function () {
+            console.log("this is mouse leave");
+        });
+
+        //keyborad event
+        $(".ipt").keyup(function () {
+            console.log($(this).val());
+        });
+
+        //form event
+        $(".ipt").focus(function () {
+            console.log('U focus');
+        });
+
+        $(".ipt").blur(function () {
+            console.log("U blur");
+        })
+
+        $("#sel").change(function () {
+            console.log($(this).val())
+        });
+
+        $(window).scroll(function () {
+            console.log("U scroll");
+        })
+
+    });
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

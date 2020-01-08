@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "mm";
+    src: url("../fonts/mm.ttf");
+}
+.mm{
+    font-font:"mm" !important;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    padding: 10px;
+}
+
+.app{
+    width: 450px;
+}
+
+.card{
+    border: 1px solid #00838f;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+.card-header{
+    background-color: #00838f;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+.card-body{
+    padding: 10px 15px;
+}
+.form-group{
+    display: flex;
+}
+.form-input{
+    flex-grow: 5;
+}
+.form-btn{
+    flex-grow: 1;
+    text-align: center;
+}
+.input-title{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #eeeeee;
+    border:none;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+.input-title:focus{
+    outline: none;
+}
+.add-btn{
+    background-color: #00838f;
+    width: 100%;
+    color: #ffffff;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 0 0.25rem 0.25rem 0;
+
+}
+.divider{
+    border: 2px solid #00838f;
+    border-radius: 0.25rem;
+    margin: 15px 0;
+}
+.list-item{
+    background: #eee;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    animation: showJob 0.5s ease-in-out;
+
+}
+.list-like{
+    /*flex-grow: 1;*/
+    width: 10%;
+    font-size: 15px;
+
+}
+.list-title{
+    /*flex-grow: 5;*/
+    width: 80%;
+
+}
+.job-title{
+    font-family: "mm";
+    /*font-weight: bolder;*/
+    font-size: 20px;
+}
+
+.list-del{
+    text-align: right;
+    /*flex-grow: 1;*/
+    width: 10%;
+
+    font-size: 15px;
+}
+
+.mr-5{
+    margin-right: 15px;
+}
+
+.del{
+    color: red;
+    transition: 0.3s;
+}
+.del:active,.like:active{
+    transform: scale(1.4);
+}
+.like{
+    color: deeppink;
+    transition: 0.3s;
+}
+.edit-title{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+
+@keyframes showJob {
+    from{
+
+        transform: translateY(-20px);
+
+    }to{
+
+        transform: translateY(0);
+
+     }
+}

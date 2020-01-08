@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 id="test" title="the greeting message form myanmar" style="color: green">min ga lar par</h1>
+<input type="text" id="two" >
+<script>
+   let name = "hein htet zan";
+   let age = 26;
+   let obj = {
+       name : "hein htet zan",
+       age : 26,
+       run : function () {
+            return this.name;
+       }
+   };
+
+   document.getElementById('two').onkeyup = function(){
+       console.log(this.value)
+   }
+
+   obj.run();
+   window.alert()
+
+   let date = new Date();
+   let file = new FileList();
+
+   console.log(date.getFullYear())
+</script>
+</body>
+</html>
