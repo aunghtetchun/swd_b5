@@ -27,11 +27,16 @@
 <div class="container-fluid">
     <div class="row">
 <!--        aside left start -->
-        <div class="col-2 vh-100" style="overflow-y: scroll">
-            <div class="aside-left ">
+        <div class="col-12 col-md-6 col-lg-3 vh-100 aside-menu p-0" style="overflow-y: scroll">
+            <div class="aside-left bg-white px-2 pb-2">
                 <ul style="list-style-type: none">
                     <li class="brand-icon">
-                        <img src="image/logo/logo-long.png" class="w-75" onclick="location.href='index.html'">
+                        <div class="d-flex justify-content-between">
+                            <img src="image/logo/logo-long.png" class="w-75" onclick="location.href='index.html'">
+                            <button class="btn btn-outline-primary d-block d-lg-none aside-menu-close">
+                                <i class="fa fa-arrow-left"></i>
+                            </button>
+                        </div>
                     </li>
                     <li>
                         <a class="menu-item active" href="index.html">
@@ -92,7 +97,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item bg-danger-soft text-danger" href="#">
+                        <a class="menu-item bg-danger-soft text-danger " href="#">
                             <span>
                                 <i class="fa fa-lock"></i>
                                 Logout
@@ -104,23 +109,33 @@
         </div>
         <!--        aside left end -->
 
-        <div class="col-10 px-0 vh-100 bg-light" style="overflow-y: scroll">
+        <div class="col-12 col-md-12 col-lg-9 px-0 vh-100 bg-light " style="overflow-y: scroll">
             <div class="container-fluid">
                 <div class="row">
 <!--                    header start-->
                     <div class="col-12 px-0 bg-primary position-sticky" style="top:0;z-index: 1000">
                         <div class="p-2 d-flex justify-content-between">
-                            <form action="">
+
+                            <form class="d-none d-md-block" action="">
 
                                 <div class="form-inline">
+                                    <button type="button" class="btn btn-light d-inline d-lg-none aside-menu-open">
+                                        <i class="fa fa-arrow-right text-primary"></i>
+                                    </button>
                                     <div class="dropdown mr-3">
                                         <a class="btn btn-light bg-transparent text-white border-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fa fa-edit"></i> Quick Add
                                         </a>
 
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa fa-envelope"></i>
+                                                EMail
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa fa-facebook-square"></i>
+                                                Facebook
+                                            </a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">
                                                 <i class="fa fa-lock"></i>
@@ -141,12 +156,18 @@
                             <div class="dropdown">
                                 <a class="btn btn-light bg-transparent text-white border-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="image/team/team-1.jpg" class="rounded-circle" style="width: 30px" alt="">
-                                    Hein Htet Zan
+                                    <span class="d-none d-lg-inline">Hein Htet Zan</span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-envelope"></i>
+                                        EMail
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-facebook-square"></i>
+                                        Facebook
+                                    </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">
                                         <i class="fa fa-lock"></i>
@@ -162,30 +183,43 @@
                         <div class="container-fluid">
                             <div class="row ">
                                 <div class="col-12 px-0">
+<!--                                    card area start-->
                                     <div class="row">
                                         <div class="col-12">
-                                            <div class="card mb-3">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-3">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                    <div class="card">
+                                                        <div class="card-body">
                                                             <div class="text-center">
                                                                 <h1 class="font-weight-bolder display-4 counter-value">15</h1>
                                                                 <p class="text-primary mb-0">Total Students</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
-                                                            <div class="text-center border-right border-left border-muted">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="text-center">
                                                                 <h1 class="font-weight-bolder display-4 counter-value">7</h1>
                                                                 <p class="text-primary mb-0">Male Students</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
-                                                            <div class="text-center border-right border-muted">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="text-center">
                                                                 <h1 class="font-weight-bolder display-4 counter-value">8</h1>
                                                                 <p class="text-primary mb-0">Female Students</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                    <div class="card">
+                                                        <div class="card-body">
                                                             <div class="text-center">
                                                                 <h1 class="font-weight-bolder display-4 counter-value">35</h1>
                                                                 <p class="text-primary mb-0">Total Teacher</p>
@@ -194,9 +228,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="col-12 col-md-6">
-                    
+                                        <div class="col-12 col-md-12 col-lg-8">
+
                                             <div class="card">
                                                 <div class="card-body">
                                                     <h4>
@@ -207,15 +242,17 @@
                                                     <canvas id="myChart"></canvas>
                                                 </div>
                                             </div>
-                                                
+
                                         </div>
+                                        <div class="col-12 col-md-5"></div>
                                     </div>
+<!--                                    card area end-->
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-                    
+<!--content end                    -->
                     
                 </div>
             </div>
@@ -246,27 +283,19 @@
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'line',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange',"pink"],
             datasets: [{
                 label: 'စမ်းကြည့်တာပါ',
-                data: [12, 19, 3, 5, 2, 3,7],
+                data: [12, 19, 3, 15, 2, 3,7],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    '#02a9f430',
+
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    '#02a9f4',
+
                 ],
                 borderWidth: 1
             }]

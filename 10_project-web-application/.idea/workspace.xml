@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/image/gallery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -58,6 +58,10 @@
       <updated>1578468354760</updated>
       <workItem from="1578468357235" duration="4463000" />
       <workItem from="1578541155799" duration="179000" />
+      <workItem from="1578588298881" duration="325000" />
+      <workItem from="1578589217398" duration="35000" />
+      <workItem from="1578589256574" duration="538000" />
+      <workItem from="1578592184761" duration="4537000" />
     </task>
     <servers />
   </component>
@@ -65,13 +69,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="164" key="SettingsEditor" timestamp="1578468422485">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1578589346366">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1578468422485" />
-    <state x="421" y="252" width="837" height="550" key="find.popup" timestamp="1578473112177">
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1578589346366" />
+    <state x="421" y="269" width="837" height="550" key="find.popup" timestamp="1578599497211">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="421" y="252" width="837" height="550" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1578473112177" />
+    <state x="421" y="269" width="837" height="550" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1578599497211" />
   </component>
 </project>

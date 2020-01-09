@@ -3,7 +3,12 @@
 }
 
 
-
+.aside-menu{
+    position: static;
+    display: block;
+    margin-left: 0;
+    /*background-color: #fff;*/
+}
 .aside-left {
 
 }
@@ -19,7 +24,7 @@
     padding: 5px 0;
 }
 .aside-left ul li{
-    margin: 10px 0;
+    /*margin: 10px 0;*/
 }
 .menu-item{
     text-transform: uppercase;
@@ -32,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 .menu-item:hover{
     background-color: #02a9f450;
@@ -47,4 +53,17 @@
 }
 .bg-danger-soft{
      background-color: #f5c6cb !important;
+}
+@media screen and (max-width: 960px) {
+    .aside-menu{
+        position: fixed;
+        margin-left: -100%;
+        z-index: 1001;
+        /*background-color: #00000060;*/
+    }
+    .aside-left{
+        width: 80%;
+        min-height: 100vh;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
 }
