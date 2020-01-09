@@ -18,6 +18,7 @@
     <link rel="icon" href="image/logo/logo-small-dark.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,7 +66,7 @@
                         <hr>
                     </li>
                     <li>
-                        <a class="menu-item active" href="search.html">
+                        <a class="menu-item" href="search.html">
                             <span>
                                 <i class="fa fa-search"></i>
                                 Search
@@ -73,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item" href="gallery.html">
+                        <a class="menu-item active" href="gallery.html">
                             <span>
                                 <i class="fa fa-image"></i>
                                 Gallery
@@ -92,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item bg-danger-soft text-danger" href="#">
+                        <a class="menu-item bg-danger-soft text-danger" href="login.html" onclick="return confirm('Are U Sure to LogOut')">
                             <span>
                                 <i class="fa fa-lock"></i>
                                 Logout
@@ -106,6 +107,7 @@
 
         <div class="col-10 px-0 vh-100 bg-light" style="overflow-y: scroll">
             <div class="container-fluid">
+
                 <div class="row">
                     <!--                    header start-->
                     <div class="col-12 px-0 bg-primary position-sticky" style="top:0;z-index: 1000">
@@ -159,86 +161,67 @@
                     <!--                    header end-->
                     <!--                    content start-->
                     <div class="col-12 py-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>
-                                    <i class="fa fa-search text-primary"></i>
-                                    Student Search
-                                </h4>
-                                <hr>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb bg-white">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>
+                                            <i class="fa fa-image text-primary"></i>
+                                            User Gallery
+                                        </h4>
+                                        <hr>
+
+                                        <div class="card-columns photo-list">
+                                        
+                                        </div>
 
 
-                                <div class="search mb-3">
-                                    <div class="form-inline">
-                                        <input type="text" class="form-control mr-2">
-                                        <button class="btn btn-primary">
-                                            <i class="fa fa-search"></i>
-                                        </button>
+
                                     </div>
                                 </div>
 
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h4>
+                                            <i class="fa fa-pie-chart text-primary"></i>
+                                            User Category
+                                        </h4>
+                                        <hr>
 
-                                <table class="table table-hover mb-0 table-striped table-responsive-sm">
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                            #
-                                        </th>
-                                        <th>
-                                            Name
-                                        </th>
-                                        <th>
-                                            Date of Birth
-                                        </th>
-                                        <th>
-                                            Gender
-                                        </th>
-                                        <th>
-                                            Created At
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>45</td>
-                                        <td>Hein Htet Zan</td>
-                                        <td>22.7.1994</td>
-                                        <td>Male</td>
-                                        <td>1 Days ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td>44</td>
-                                        <td>Hein Htet Zan</td>
-                                        <td>22.7.1994</td>
-                                        <td>Male</td>
-                                        <td>1 Days ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td>43</td>
-                                        <td>Hein Htet Zan</td>
-                                        <td>22.7.1994</td>
-                                        <td>Male</td>
-                                        <td>1 Days ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td>42</td>
-                                        <td>Hein Htet Zan</td>
-                                        <td>22.7.1994</td>
-                                        <td>Male</td>
-                                        <td>1 Days ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td>41</td>
-                                        <td>Hein Htet Zan</td>
-                                        <td>22.7.1994</td>
-                                        <td>Male</td>
-                                        <td>1 Days ago</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                        <ul class="list-group g-cat">
+                                            <li class="list-group-item" data-id="side-bar">Side Bar</li>
+                                            <li class="list-group-item" data-id="user-team">User Team</li>
+                                            <li class="list-group-item" data-id="gallery">Gallery</li>
+                                            <li class="list-group-item active" data-id="all">Show All</li>
+
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <h1 class="font-weight-bolder display-4">15</h1>
+                                            <p class="text-primary">Total Photo</p>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -251,6 +234,60 @@
 <script src="js/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<script src="vendor/venobox/venobox.min.js"></script>
 <script src="js/app.js"></script>
+<script>
+    for (i=1;i<5;i++){
+        $(".card-columns").append(`
+            <div class="card user-team">
+                <a class="venobox" data-gall="gallery-0" href="image/gallery/team-${i}.jpg">
+                    <img src="image/gallery/team-${i}.jpg" class="rounded w-100 " alt="sgsdfs">
+                </a>
+                
+            </div>
+            <div class="card gallery">
+                <a class="venobox" data-gall="gallery-1" href="image/gallery/${i}.jpg">
+                    <img src="image/gallery/${i}.jpg" class="rounded w-100 " alt="sdfds">
+                </a>
+                
+            </div>
+            <div class="card side-bar">
+                <a class="venobox" data-gall="gallery-2" href="image/gallery/0${i}.jpg">
+                    <img src="image/gallery/0${i}.jpg" class="rounded w-100 " alt="sdfsdf">
+                </a>
+            </div>
+        `);
+    }
+
+    $(".g-cat .list-group-item").click(function () {
+        $(".g-cat .list-group-item").removeClass('active');
+        $(this).addClass('active');
+        let current = $(this).attr("data-id");
+        if(current == "all"){
+            $(".photo-list .card").show(0);
+        }else{
+            $(".photo-list .card").hide(0,function () {
+                $(".photo-list ."+current).show();
+            });
+        }
+    });
+
+    var test = $('.venobox').venobox();
+
+    // close current item clicking on .closeme
+    $(document).on('click', '.closeme', function(e){
+        test.VBclose();
+    });
+
+    // go to next item in gallery clicking on .next
+    $(document).on('click', '.next', function(e){
+        test.VBnext();
+    });
+
+    // go to previous item in gallery clicking on .previous
+    $(document).on('click', '.previous', function(e){
+        test.VBprev();
+    });
+</script>
 </body>
 </html>

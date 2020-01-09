@@ -159,9 +159,64 @@
 <!--                    header end-->
 <!--                    content start-->
                     <div class="col-12 py-3">
-<!--                        content end-->
-
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div class="col-12 px-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card mb-3">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-3">
+                                                            <div class="text-center">
+                                                                <h1 class="font-weight-bolder display-4 counter-value">15</h1>
+                                                                <p class="text-primary mb-0">Total Students</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-3">
+                                                            <div class="text-center border-right border-left border-muted">
+                                                                <h1 class="font-weight-bolder display-4 counter-value">7</h1>
+                                                                <p class="text-primary mb-0">Male Students</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-3">
+                                                            <div class="text-center border-right border-muted">
+                                                                <h1 class="font-weight-bolder display-4 counter-value">8</h1>
+                                                                <p class="text-primary mb-0">Female Students</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-3">
+                                                            <div class="text-center">
+                                                                <h1 class="font-weight-bolder display-4 counter-value">35</h1>
+                                                                <p class="text-primary mb-0">Total Teacher</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                    
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4>
+                                                        <i class="fa fa-bars text-primary"></i>
+                                                        Test Chart
+                                                    </h4>
+                                                    <hr>
+                                                    <canvas id="myChart"></canvas>
+                                                </div>
+                                            </div>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -174,5 +229,61 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+<script>
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 1000,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+
+</script>
+
+
 </body>
 </html>
