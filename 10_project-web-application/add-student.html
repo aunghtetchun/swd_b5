@@ -242,10 +242,24 @@
                                 <div class="col-12 col-md-8">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4>
-                                                <i class="fa fa-list text-primary"></i>
-                                                Last Added Students
-                                            </h4>
+                                            <div  class="d-flex justify-content-between align-items-center">
+                                                <h4 class="mb-0">
+                                                    <i class="fa fa-list text-primary "></i>
+                                                    Last Added Students
+                                                </h4>
+                                                <div class="">
+                                                    <div class="dropdown">
+                                                        <button type="button" data-toggle="dropdown" class="btn btn-primary right-top-dropdown">
+                                                            <i class="fa fa-gear"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">Action</a>
+                                                            <a class="dropdown-item" href="#">Another action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <hr>
 
                                             <div class="d-flex justify-content-between">
@@ -373,5 +387,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/app.js"></script>
+<script>
+    $(".right-top-dropdown").dropdown();
+</script>
 </body>
 </html>
