@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            font-family: 'Asap Condensed', sans-serif;
+        }
+
+        .ff{
+            font-family: 'Poiret One', cursive;
+        }
+
+        input:focus,button:focus,textarea:focus{
+            outline: none;
+        }
+        body{
+            height: 2000px;
+        }
+
+        .custom-btn{
+            border-radius: 30px;
+            padding: 5px 15px;
+            background: #e3e3e3;
+            color: #222222;
+            border:none;
+            transition: 0.3s;
+        }
+        .custom-btn:active,.custom-btn:hover{
+            background: #222222;
+            color: #e3e3e3;
+            text-decoration: none;
+        }
+
+        .home{
+            background-image: url(img/pasta-bg.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            background-position: bottom;
+        }
+
+        .search{
+            border: 2px solid #e3e3e3;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            margin: 30vh auto 10vh auto;
+            background: #ffffff;
+            border-radius: 30px;
+
+        }
+        .search i{
+            font-size: 30px;
+            margin-left: 10px;
+            color: #222222;
+            transition: 0.3s;
+        }
+        .search input{
+            flex-grow: 1;
+            margin: 0 15px;
+            border:none;
+            color: #222222;
+        }
+
+        .search button{
+            border-radius: 30px;
+            padding: 5px 15px;
+            background: #222222;
+            color: #e3e3e3;
+            border:none;
+            transition: 0.3s;
+        }
+        .search button:active{
+            background: #222222;
+            color: #e3e3e3;
+        }
+
+        .popular-menu{
+            margin-bottom: -150px;
+            box-shadow: 0 0px 35px #00000060, 0 0px 25px #00000060, 0 0px 15px #00000060;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="container-fluid home" >
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="w-100">
+                            <div class="search">
+                                <i class="fa fa-cutlery"></i>
+                                <input type="text" name="" autofocus>
+                                <button class="">Search</button>
+                            </div>
+                            <div class="popular-menu bg-white">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="px-5">
+                                            <h3 class="text-uppercase mb-3">Italy Pasta <span class="badge badge-dark">New</span></h3>
+                                            <p class="ff mb-4">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque debitis deserunt doloribus dolorum hic illo itaque maiores minima nesciunt omnis quas reiciendis, sunt ut voluptate! Culpa iusto laborum tempora.
+                                                <br>
+                                                <b>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at cum cupiditate et fugit iusto labore!
+                                                </b>
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="custom-btn">Get it Now</a>
+                                                <div class="">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 px-0">
+                                        <img src="img/pasta.jpg" class="w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
