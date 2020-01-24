@@ -24,7 +24,7 @@
             outline: none;
         }
         body{
-            height: 2000px;
+            height: 5000px;
         }
 
         .custom-btn{
@@ -51,7 +51,7 @@
         }
 
         .search{
-            border: 2px solid #e3e3e3;
+            border: 2px solid #222222;
             padding: 10px;
             display: flex;
             justify-content: space-between;
@@ -93,6 +93,34 @@
             box-shadow: 0 0px 35px #00000060, 0 0px 25px #00000060, 0 0px 15px #00000060;
         }
 
+        .feature{
+            margin-top: 25vh;
+        }
+        .feature h4{
+            margin-top: -50px;
+        }
+
+        .scroll-to-top{
+            background-color: #222222;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .search{
+                width: 100%;
+            }
+
+        }
 
 
     </style>
@@ -114,8 +142,8 @@
                             </div>
                             <div class="popular-menu bg-white">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-md-6">
-                                        <div class="px-5">
+                                    <div class="col-12 col-md-6 px-0">
+                                        <div class="p-5">
                                             <h3 class="text-uppercase mb-3">Italy Pasta <span class="badge badge-dark">New</span></h3>
                                             <p class="ff mb-4">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque debitis deserunt doloribus dolorum hic illo itaque maiores minima nesciunt omnis quas reiciendis, sunt ut voluptate! Culpa iusto laborum tempora.
@@ -149,9 +177,80 @@
     </div>
 </div>
 
+<div class="container feature">
+    <dvi class="row ">
+        <div class="col-12 col-md-4">
+            <div class="text-center">
+                <img src="img/curry.gif" class="w-100" alt="">
+                <h4 class="mb-3">Good Foot Rates</h4>
+                <p class="ff">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda dicta expedita harum mollitia provident sunt unde veniam voluptates.
+                </p>
+                <a href="" class="btn btn-outline-dark">
+                    Read More
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 border-right border-left border-faded">
+            <div class="text-center ">
+                <img src="img/ice-cream.gif" class="w-100" alt="">
+                <h4 class="mb-3">Ready to Eat</h4>
+                <p class="ff">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda dicta expedita harum mollitia provident sunt unde veniam voluptates.
+                </p>
+                <a href="" class="btn btn-outline-dark">
+                    Read More
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="text-center">
+                <img src="img/cake.gif" class="w-100" alt="">
+                <h4 class="mb-3">Bring To Home</h4>
+                <p class="ff">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam assumenda dicta expedita harum mollitia provident sunt unde veniam voluptates.
+                </p>
+                <a href="" class="btn btn-outline-dark">
+                    Read More
+                </a>
+            </div>
+        </div>
+        
+    </dvi>
+</div>
+
+
+<div class="container-fluid slide">
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+</div>
+
+<div class="scroll-to-top" style="display: none">
+    <i class="fa fa-angle-up fa-2x"></i>
+</div>
+
 
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
+<script>
+    $(".scroll-to-top").click(function () {
+        $("html").animate({
+            scrollTop:0
+        },1000);
+    });
+
+    $(window).scroll(function () {
+        let current = $(this).scrollTop();
+        let screenHeight = $(this).innerHeight();
+        console.log(screenHeight)
+        if(current<screenHeight){
+            $(".scroll-to-top").fadeOut("slow");
+        }else{
+            $(".scroll-to-top").fadeIn("slow");
+        }
+    });
+</script>
 </body>
 </html>
