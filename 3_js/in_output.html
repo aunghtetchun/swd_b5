@@ -1,0 +1,18 @@
+<h1 id="aa" title="acbd" style="color: green">jkhhkh</h1>
+<h1 id="bb" >jkhhkh</h1>
+<h1 id≠≠="cc" onclick="cc()">jkhhkh</h1>
+
+
+<script type="text/javascript">
+	document.getElementById('aa').onclick = function () {
+		alert("this is dom event porperties");
+	}
+
+	document.getElementById('bb').addEventListener("click",function(){
+		alert("this is addEventListener method")
+	})
+
+	function cc(){
+		alert("this is event listen by attribute");
+	}
+</script>
