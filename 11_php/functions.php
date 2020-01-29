@@ -119,7 +119,12 @@ echo "replace =>".str_replace("hein","htet",$name);
 echo "<br>";
 echo "repeat =>".str_repeat($name."<br>",10);
 echo "<br>";
-
+echo "shuffle string =>".str_shuffle($name);
+echo "<br>";
+echo "upper case =>".strtoupper($name);
+echo "<br>";
+echo "lower case =>".strtolower($name);
+echo "<br>";
 //trim
 $str = "{hein htet}";
 echo trim($str,"{}");
@@ -135,6 +140,11 @@ $ent = htmlentities($newStr,ENT_QUOTES);
 echo "html entities change =>".$ent;
 echo "<br>";
 echo "normal string =>".html_entity_decode($ent,ENT_QUOTES);
+echo "<br>";
+
+//html to text
+$htmlTag = "<h2>kyaw gyi</h2>";
+echo strip_tags($htmlTag);
 
 
 
