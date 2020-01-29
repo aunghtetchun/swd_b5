@@ -107,4 +107,45 @@ $startIndex = current($arr);
 $lastIndex = end($arr);
 
 
+//string function
+$name = "hein htet zan";
+echo "string length =>".strlen($name);
+echo "<br>";
+echo "word count => ".str_word_count($name);
+echo "<br>";
+echo "string position =>".strpos($name,"htet");
+echo "<br>";
+echo "replace =>".str_replace("hein","htet",$name);
+echo "<br>";
+echo "repeat =>".str_repeat($name."<br>",10);
+echo "<br>";
+
+//trim
+$str = "{hein htet}";
+echo trim($str,"{}");
+echo "<br>";
+echo ltrim($str,"{}");
+echo "<br>";
+echo rtrim($str,"{}");
+echo "<br>";
+
+//security || sql injection protection
+$newStr = "I'm Hein Htet & Zan > 18.<h1>min ga lar par</h1>";
+$ent = htmlentities($newStr,ENT_QUOTES);
+echo "html entities change =>".$ent;
+echo "<br>";
+echo "normal string =>".html_entity_decode($ent,ENT_QUOTES);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
