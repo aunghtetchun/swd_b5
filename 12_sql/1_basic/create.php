@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Create</title>
     <style>
         fieldset{
             width: 300px;
@@ -20,8 +20,39 @@
     </style>
 </head>
 <body>
+<pre>
+<?php
 
-<form action="">
+    if(isset($_GET['create'])){
+        //get
+//        print_r($_GET);
+        $name = $_GET["name"];
+        $phone = $_GET["phone"];
+
+        //mysql connection
+        $con = mysqli_connect("localhost","root","","weekday_sql");
+
+        if($name && $phone){
+
+            $sql = "INSERT INTO contacts (name,phone) VALUES ('$name','$phone')";
+
+//            $query = mysqli_query($con,$sql);
+
+            if(mysqli_query($con,$sql)){
+                header("location:create.php");
+            }else{
+                echo "db input fail";
+
+            }
+
+
+        }
+//        header("location:create.php");
+    }
+
+?>
+</pre>
+<form action="" method="get">
 
     <fieldset>
         <legend>Contact Create Form</legend>
